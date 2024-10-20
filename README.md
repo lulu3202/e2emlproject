@@ -40,7 +40,7 @@ This project is an end-to-end machine learning application that predicts student
         2. Build and push Docker images to AWS ECR (a private repository).
         3. Continuous Deployment (CD) where the ECR image runs as a self-hosted App Runner.
 
-## CI/CD Pipeline
+## CI/CD Pipeline Workflow
 
 ### Steps:
 1. **Docker Build Check**:
@@ -58,6 +58,8 @@ Commands to set up Docker on an EC2 instance (optional):
 # Optional: Update and upgrade EC2 instance
 sudo apt-get update -y
 sudo apt-get upgrade
+
+
 
 # Required: Install Docker
 curl -fsSL https://get.docker.com -o get-docker.sh
