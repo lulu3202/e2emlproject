@@ -54,6 +54,26 @@ This project is an end-to-end machine learning application that predicts student
 
 3. **AWS IAM User**:
     - Create an IAM user in AWS with appropriate permissions for ECR and App Runner.
+  
+4. **Github Actions**:
+   Set up 'self-hosted' runner under Actions (under Settings)
+
+   ![image](https://github.com/user-attachments/assets/3892905e-a95f-4980-8553-2a7b8ef0c769)
+
+5. **Github Settings**
+   Add Github secrets
+  
+AWS_ACCESS_KEY_ID=
+
+AWS_SECRET_ACCESS_KEY=
+
+AWS_REGION = us-east-1
+
+AWS_ECR_LOGIN_URI = demo>>  566373416292.dkr.ecr.ap-south-1.amazonaws.com
+
+ECR_REPOSITORY_NAME = simple-app   
+
+![image](https://github.com/user-attachments/assets/084267a7-4f40-44b0-8f47-85c835a169a7)
 
 ### Docker Setup on EC2
 Commands to set up Docker on an EC2 instance (optional):
@@ -68,22 +88,10 @@ sudo sh get-docker.sh
 sudo usermod -aG docker ubuntu
 newgrp docker
 
- #### Github Steps
-1. Set up 'self-hosted' runner under Actions (under Settings)
-![image](https://github.com/user-attachments/assets/79aab525-df99-48f6-b3c1-e8ea263065a6)
-2. Add github secrets under settings 
-
-AWS_ACCESS_KEY_ID=
-
-AWS_SECRET_ACCESS_KEY=
-
-AWS_REGION = us-east-1
-
-AWS_ECR_LOGIN_URI = demo>>  566373416292.dkr.ecr.ap-south-1.amazonaws.com
-
-ECR_REPOSITORY_NAME = simple-app
 
 
-![image](https://github.com/user-attachments/assets/084267a7-4f40-44b0-8f47-85c835a169a7)
+
+
+
 
 
