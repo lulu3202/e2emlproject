@@ -4,6 +4,7 @@ import numpy as np  # For numerical operations
 import pandas as pd  # For data manipulation
 from sklearn.preprocessing import StandardScaler  # For scaling data
 
+
 # Import custom modules for handling data and making predictions
 from src.pipeline.predict_pipeline import CustomData, PredictPipeline
 
