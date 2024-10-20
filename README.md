@@ -32,6 +32,9 @@ This project is an end-to-end machine learning application that predicts student
     - Key files:
         - `app.py`
         - `predict_pipeline.py`
+     
+          ![image](https://github.com/user-attachments/assets/9d4ec82b-c404-4365-95f8-1f4cf6c68a92)
+
 
 9. **CI/CD Workflow**
     - Set up a CI/CD pipeline using GitHub Actions and AWS ECR.
@@ -59,10 +62,28 @@ Commands to set up Docker on an EC2 instance (optional):
 sudo apt-get update -y
 sudo apt-get upgrade
 
-
-
 # Required: Install Docker
 curl -fsSL https://get.docker.com -o get-docker.sh
 sudo sh get-docker.sh
 sudo usermod -aG docker ubuntu
 newgrp docker
+
+ #### Github Steps
+1. Set up 'self-hosted' runner under Actions (under Settings)
+![image](https://github.com/user-attachments/assets/79aab525-df99-48f6-b3c1-e8ea263065a6)
+2. Add github secrets under settings 
+
+AWS_ACCESS_KEY_ID=
+
+AWS_SECRET_ACCESS_KEY=
+
+AWS_REGION = us-east-1
+
+AWS_ECR_LOGIN_URI = demo>>  566373416292.dkr.ecr.ap-south-1.amazonaws.com
+
+ECR_REPOSITORY_NAME = simple-app
+
+
+![image](https://github.com/user-attachments/assets/084267a7-4f40-44b0-8f47-85c835a169a7)
+
+
